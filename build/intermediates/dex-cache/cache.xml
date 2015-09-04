@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-66a3d10d3fe1876b04e902fd07b411afb4f40adc.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/gson-2.3.1-db347212bcda2648244d4b24078ad368b698503a.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-892adaf014e53d6fb458f0e24112abd1e381229f.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-c517222b26e10d472ae39e657c479ea0f25f7659.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-6bbe9b5d6a4ec71d1909297ac4c56013742f2fa4.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-182fcdcb8afda85cc0e5e7115e398263df2bfaca.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/3.1.0/3ab2aedaeb4bfa698d0021cb843b2040fbf57fc/timber-3.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="03ab2aedaeb4bfa698d0021cb843b2040fbf57fc">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/timber-3.1.0-f396ae44c8a56ab826dfa0c61483aa01bcdaed26.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-082569f5c1319e825feb775bd0069a03c8d75c66.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.0/a7537446a030da8eb0da4c71424d16c2589f6c4a/glide-3.6.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a7537446a030da8eb0da4c71424d16c2589f6c4a">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/glide-3.6.0-2dfd686d31cdb147b2abb3a862c5cebc0fb94219.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.systembartint/systembartint/1.0.3/de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287/systembartint-1.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/systembartint-1.0.3-71a875e570779c942f52aa70b5070e583e3c07b5.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-241bcf0dc6500f125044645985adfcf10b33aa3f.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-f07471cc8daabba9b33b6c2492a169834e3c6749.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-ed1fd99931ff2031609f270cc5ac325ac4959731.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/libs/activeandroid-3.1-beta.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="60a522113b5b4beca6696530394e411705988e92">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/activeandroid-3.1-beta-c9907b5888a8ec476727c1c7709335f6d0facb3f.jar" />
+    </item>
+    <item
+        jar="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="/usr/local/Android/android-code/studio-project/TitanjumNote/app/build/intermediates/pre-dexed/debug/classes-2213a9197513946a31cf01973657e5d9005f6617.jar" />
+    </item>
+
+</items>

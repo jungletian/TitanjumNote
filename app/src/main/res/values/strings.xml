@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TitanjumNote</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_write_note">WriteNoteActivity</string>
+
+    <string name="settings">设置</string>
+    <string name="content">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese the big cheese</string>
+    <string name="about">关于</string>
+    <string name="search">搜索</string>
+    <string name="my_note">我的笔记</string>
+    <string name="title_search_hint">请输入文本</string>
+
+</resources>

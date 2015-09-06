@@ -5,6 +5,7 @@
     android:layout_margin="@dimen/card_margin">
 
     <LinearLayout
+        android:background="@drawable/note_more_bg"
         style="@style/Widget.CardContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

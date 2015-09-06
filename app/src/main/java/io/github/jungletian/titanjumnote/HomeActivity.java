@@ -1,12 +1,15 @@
 package io.github.jungletian.titanjumnote;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -92,9 +95,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
             @Override
             public void onItemLongClick(NoteInfo info) {
                 selectInfo = info;
-                // TODO 长按删除对话框，或者想一个其他的方案
-                selectInfo.delete();
-                notifyDataChanged();
+                AlertDialog dialog = new AlertDialog.Builder(HomeActivity.this,R.style.Base_Theme_AppCompat_Light_Dialog_Alert).create();
+                dialog.setTitle("确定删除吗");
+                dialog.setButton(Dialog.BUTTON_NEGATIVE, "取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                dialog.setButton(Dialog.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        selectInfo.delete();
+                        notifyDataChanged();
+                    }
+                });
+                dialog.show();
+
             }
         });
     }

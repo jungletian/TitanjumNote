@@ -14,5 +14,7 @@ public class Constans {
 
     public static final String WRITE_NOTE_DATA = "write_note_data";
 
+    public static final String A = "a";
+
 
 }

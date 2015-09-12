@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.jungletian.titanjumnote">
+    package="io.github.jungletian.titanjumnote" >
 
     <application
         android:name=".TApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
         <meta-data
             android:name="AA_DB_NAME"
             android:value="noteinfo.db" />
@@ -19,26 +23,29 @@
             android:value="io.github.jungletian.titanjumnote.data.NoteInfo" />
 
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/app_name"></activity>
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name" />
         <activity
-            android:name=".WriteNoteActivity"
+            android:name=".activity.WriteNoteActivity"
             android:label="@string/title_activity_write_note"
-            android:parentActivityName=".HomeActivity">
+            android:parentActivityName=".activity.HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.jungletian.titanjumnote.HomeActivity" />
+                android:value=".activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:label="@string/app_name"
             android:logo="@mipmap/ic_launcher"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.evernote.client.android.EvernoteOAuthActivity" />
+        <activity android:name="com.evernote.client.android.login.EvernoteLoginActivity"/>
     </application>
 
 </manifest>

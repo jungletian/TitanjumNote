@@ -22,7 +22,7 @@
          the container. &ndash;&gt;
     <fragment
         android:id="@+id/navigation_drawer"
-        android:name="io.github.jungletian.titanjumnote.NavigationDrawerFragment"
+        android:name="io.github.jungletian.titanjumnote.util.NavigationDrawerFragment"
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -30,27 +30,36 @@
 
 </android.support.v4.widget.DrawerLayout>-->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<io.github.jungletian.titanjumnote.view.SwipeBackFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@drawable/note_background"
     android:padding="5dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:layout_width="80dp"
+      android:layout_height="70dp"
+      android:src="@drawable/avertor"
+      android:layout_gravity="center|left"
+      />
 
-    <android.support.v7.widget.RecyclerView
+  <android.support.v7.widget.RecyclerView
 
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_note_add_white_36dp" />
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end|bottom"
+      android:layout_margin="@dimen/fab_margin"
+      android:src="@drawable/ic_note_add_white_36dp"
+      />
 
-</FrameLayout>
+</io.github.jungletian.titanjumnote.view.SwipeBackFrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/evernote_normal_65_65" />
+  <item android:drawable="@drawable/evernote_pressed_65_65" android:state_selected="true"/>
+</selector>

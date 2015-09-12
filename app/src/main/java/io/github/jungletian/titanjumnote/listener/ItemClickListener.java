@@ -7,5 +7,9 @@ import io.github.jungletian.titanjumnote.data.NoteInfo;
  * Email：tjsummery@gmail.com
  */
 public interface ItemClickListener {
-    void onItemClick(NoteInfo info);
+  /**
+   * 某个笔记被点击
+   * @param info 笔记信息
+   */
+  void onItemClick(NoteInfo info);
 }

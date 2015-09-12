@@ -1,10 +1,8 @@
 package io.github.jungletian.titanjumnote.util;
 
 import com.activeandroid.query.Select;
-
-import java.util.List;
-
 import io.github.jungletian.titanjumnote.data.NoteInfo;
+import java.util.List;
 
 /**
  * Create by JungleTian on 15-8-27 00:11.
@@ -12,23 +10,28 @@ import io.github.jungletian.titanjumnote.data.NoteInfo;
  */
 public class DBHelper {
 
-    public static List<NoteInfo> getAll() {
-        return new Select()
-                .from(NoteInfo.class)
-                .orderBy("title DESC")
-                .execute();
-    }
+  /**
+   * 获取所有笔记
+   * @return 所有笔记
+   */
+  public static List<NoteInfo> getAll() {
+    return new Select().from(NoteInfo.class).orderBy("title DESC").execute();
+  }
 
-    public static List<NoteInfo> search(String required){
-        return new Select()
-                .from(NoteInfo.class)
-                .where("content = ?",required)
-                .execute();
+  /**
+   * 通过某个字段进行搜索
+   * @param required 条件
+   * @return 查到的笔记
+   */
+  public static List<NoteInfo> search(String required) {
+    return new Select().from(NoteInfo.class).where("content = ?", required).execute();
+  }
 
-    }
-
-    public static void delete(NoteInfo info){
-        info.delete(NoteInfo.class, 1);
-    }
-
+  /**
+   * 删除笔记
+   * @param info 笔记信息
+   */
+  public static void delete(NoteInfo info) {
+    info.delete(NoteInfo.class, 1);
+  }
 }

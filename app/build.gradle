@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        jungletian {
+            keyAlias 'jungletian'
+            keyPassword 'sr19900204'
+            storeFile file('/root/桌面/code/keystore/jungletian.jks')
+            storePassword 'sr19900204'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "23.0.0"
-
     defaultConfig {
         applicationId "io.github.jungletian.titanjumnote"
         minSdkVersion 16
@@ -15,6 +22,33 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+        productFlavors {
+            fir {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "fir"]
+            }
+            GooglePlay {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "GooglePlay"]
+            }
+            Xiaomi {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Xiaomi"]
+            }
+            _360 {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
+            }
+            Baidu {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Baidu"]
+            }
+            Wandoujia {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Wandoujia"]
+            }
+        }
+    }
+    productFlavors {
+        Wandoujia {
+            signingConfig signingConfigs.jungletian
         }
     }
 }
@@ -32,5 +66,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.6.0'
     compile 'com.jakewharton.timber:timber:3.1.0'
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.gabrielemariotti.changeloglib:changelog:2.0.0'
+    compile 'com.evernote:android-sdk:2.0.0-RC3'
     compile files('libs/activeandroid-3.1-beta.jar')
 }

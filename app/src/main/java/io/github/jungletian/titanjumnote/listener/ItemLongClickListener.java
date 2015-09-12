@@ -7,5 +7,9 @@ import io.github.jungletian.titanjumnote.data.NoteInfo;
  * Email：tjsummery@gmail.com
  */
 public interface ItemLongClickListener {
-    void onItemLongClick(NoteInfo info);
+  /**
+   * 某个信息长按点击事件
+   * @param info 笔记信息
+   */
+  void onItemLongClick(NoteInfo info);
 }

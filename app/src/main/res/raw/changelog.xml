@@ -2,14 +2,19 @@
 <changelog bulletedList="true">
 
     <changelogversion versionName="1.0" changeDate="2015年8月28日">
-        <changelogtext>第一次提交</changelogtext>
-    </changelogversion>
-
-    <changelogversion versionName="0.9" changeDate="2015年8月25日">
+        <changelogtext>square代码风格</changelogtext>
+        <changelogtext>支持滑动退出</changelogtext>
+        <changelogtext>支持单列，双列切换</changelogtext>
         <changelogtext>精美背景图</changelogtext>
         <changelogtext>支持长按删除</changelogtext>
         <changelogtext>支持搜索内容</changelogtext>
-        <changelogtext>支持保持数据到本地</changelogtext>
+
+    </changelogversion>
+
+    <changelogversion versionName="0.5" changeDate="2015年8月25日">
+        <changelogtext>收集资料，合理利用第三方框架</changelogtext>
+        <changelogtext>项目立项</changelogtext>
+        <changelogtext>第一次提交</changelogtext>
     </changelogversion>
 
 </changelog>

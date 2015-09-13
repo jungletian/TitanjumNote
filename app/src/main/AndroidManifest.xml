@@ -1,51 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.jungletian.titanjumnote" >
+    package="io.github.jungletian.titanjumnote"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
 
-    <application
-        android:name=".TApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+  <application
+      android:name=".TApplication"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:largeHeap="true"
+      android:theme="@style/AppTheme"
+      >
+    <meta-data
+        android:value="55f4e8db67e58e4f6c006d67"
+        android:name="UMENG_APPKEY"
+        />
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${UMENG_CHANNEL_VALUE}"
+        />
+    <meta-data
+        android:name="AA_DB_NAME"
+        android:value="noteinfo.db"
+        />
+    <meta-data
+        android:name="AA_DB_VERSION"
+        android:value="5"
+        />
+    <meta-data
+        android:name="AA_MODELS"
+        android:value="io.github.jungletian.titanjumnote.data.NoteInfo"
+        />
+
+    <activity
+        android:name=".activity.HomeActivity"
         android:label="@string/app_name"
-        android:largeHeap="true"
-        android:theme="@style/AppTheme" >
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="${UMENG_CHANNEL_VALUE}" />
-        <meta-data
-            android:name="AA_DB_NAME"
-            android:value="noteinfo.db" />
-        <meta-data
-            android:name="AA_DB_VERSION"
-            android:value="5" />
-        <meta-data
-            android:name="AA_MODELS"
-            android:value="io.github.jungletian.titanjumnote.data.NoteInfo" />
+        />
+    <activity
+        android:name=".activity.WriteNoteActivity"
+        android:label="@string/title_activity_write_note"
+        android:parentActivityName=".activity.HomeActivity"
+        >
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".activity.HomeActivity"
+          />
+    </activity>
+    <activity
+        android:name=".activity.SplashActivity"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
 
-        <activity
-            android:name=".activity.HomeActivity"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".activity.WriteNoteActivity"
-            android:label="@string/title_activity_write_note"
-            android:parentActivityName=".activity.HomeActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.HomeActivity" />
-        </activity>
-        <activity
-            android:name=".activity.SplashActivity"
-            android:label="@string/app_name"
-            android:logo="@mipmap/ic_launcher"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.evernote.client.android.EvernoteOAuthActivity"/>
+    <activity android:name="com.evernote.client.android.login.EvernoteLoginActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.evernote.client.android.EvernoteOAuthActivity" />
-        <activity android:name="com.evernote.client.android.login.EvernoteLoginActivity"/>
-    </application>
+    <service
+        android:name="com.umeng.update.net.DownloadingService"
+        android:process=":DownloadingService"
+        >
+    </service>
+    <activity
+        android:name="com.umeng.update.UpdateDialogActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        >
+    </activity>
+  </application>
 
 </manifest>

@@ -68,5 +68,7 @@ dependencies {
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile 'com.github.gabrielemariotti.changeloglib:changelog:2.0.0'
     compile 'com.evernote:android-sdk:2.0.0-RC3'
+    compile 'com.umeng.analytics:analytics:latest.integration'
     compile files('libs/activeandroid-3.1-beta.jar')
+    compile files('libs/umeng-update-v2.6.0.1.jar')
 }

@@ -25,6 +25,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.evernote.client.android.EvernoteSession;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengUpdateAgent;
 import io.github.jungletian.titanjumnote.R;
 import io.github.jungletian.titanjumnote.adapter.AdapterType;
 import io.github.jungletian.titanjumnote.adapter.NoteAdapter;
@@ -85,9 +87,21 @@ public class HomeActivity extends AppCompatActivity
     swipeBackFrameLayout.setCallBack(new SwipeBackFrameLayout.CallBack() {
       @Override public void onShouldFinish() {
         finish();
-        overridePendingTransition(R.anim.no_anim,R.anim.out_to_right);
+        overridePendingTransition(R.anim.no_anim, R.anim.out_to_right);
       }
     });
+
+    UmengUpdateAgent.update(this);
+  }
+
+  @Override protected void onResume() {
+    super.onResume();
+    MobclickAgent.onResume(this);
+  }
+
+  @Override protected void onPause() {
+    super.onPause();
+    MobclickAgent.onPause(this);
   }
 
   private void initEvernote() {

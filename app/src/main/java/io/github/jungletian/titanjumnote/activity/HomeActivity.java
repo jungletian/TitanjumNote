@@ -26,7 +26,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.evernote.client.android.EvernoteSession;
 import com.umeng.analytics.MobclickAgent;
-import com.umeng.update.UmengUpdateAgent;
 import io.github.jungletian.titanjumnote.R;
 import io.github.jungletian.titanjumnote.adapter.AdapterType;
 import io.github.jungletian.titanjumnote.adapter.NoteAdapter;
@@ -91,7 +90,7 @@ public class HomeActivity extends AppCompatActivity
       }
     });
 
-    UmengUpdateAgent.update(this);
+    //UmengUpdateAgent.update(this);
   }
 
   @Override protected void onResume() {

@@ -9,9 +9,9 @@ import com.evernote.client.android.EvernoteSession;
 public class Constans {
 
   /** 新建笔记请求码 */
-  public static final int WRITE_NOTE_REQUEST_CODE = 0x001;
+  public static final int WRITE_NOTE_REQUEST_CODE = 0x011;
   /** 修改笔记请求码 */
-  public static final int MODIFY_NOTE_REQUEST_CODE = 0x002;
+  public static final int MODIFY_NOTE_REQUEST_CODE = 0x012;
   /** 当前内容 */
   public static final String CURRENT_CONTENT = "current_content";
   /** 写笔记 */

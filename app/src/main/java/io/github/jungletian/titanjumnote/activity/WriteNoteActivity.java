@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import butterknife.Bind;
@@ -56,9 +57,17 @@ public class WriteNoteActivity extends AppCompatActivity {
         }*/
   }
 
+  @Override public boolean onOptionsItemSelected(MenuItem item) {
+    if (item.getItemId() == android.R.id.home) {
+      onBackPressed();
+      return true;
+    }
+    return super.onOptionsItemSelected(item);
+  }
+
   @Override public void onBackPressed() {
     setData();
-    super.onBackPressed();
+    finish();
   }
 
   private void setData() {

@@ -1,3 +1,6 @@
 /build
 /local.properties
 /TitanjumNote.iml
+/.gradle
+/.idea
+/app/app.iml

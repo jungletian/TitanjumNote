@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
 
+def keyStore = file('jungletian.jks')
+
 android {
     signingConfigs {
         jungletian {
-            keyAlias 'jungletian'
-            keyPassword 'sr19900204'
-            storeFile file('/root/桌面/code/keystore/jungletian.jks')
-            storePassword 'sr19900204'
+            storeFile file('jungletian.jks')
+            storePassword project.hasProperty('STOREPASS') ? STOREPASS : ''
+            keyAlias project.hasProperty('KEYALIAS') ? KEYALIAS : ''
+            keyPassword project.hasProperty('KEYPASS') ? KEYPASS : ''
         }
     }
     compileSdkVersion 22
@@ -22,6 +24,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+            if (keyStore.exists()) {
+                println "using drakeet's key"
+                signingConfig signingConfigs.jungletian
+            } else {
+                println "---------------using default key---------------"
+            }
         }
 
 

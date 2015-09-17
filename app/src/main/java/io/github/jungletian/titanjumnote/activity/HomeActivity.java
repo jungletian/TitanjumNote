@@ -67,6 +67,8 @@ public class HomeActivity extends AppCompatActivity
   /** 存储 */
   private SharedPreferences sharedPreferences;
 
+  private boolean isSingle = false;
+
   private EvernoteSession mEvernoteSession;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -119,7 +121,6 @@ public class HomeActivity extends AppCompatActivity
     ActionBar actionBar = getSupportActionBar();
     actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
     actionBar.setDisplayShowTitleEnabled(true);
-
     actionBar.setCustomView(R.layout.search_view);
     actionBar.setDisplayShowCustomEnabled(true);
     actionBar.setTitle(R.string.my_note);
@@ -296,8 +297,6 @@ public class HomeActivity extends AppCompatActivity
     item.setTitle(isSingle ? "二列" : "一列");
     return true;
   }
-
-  private boolean isSingle = false;
 
   @Override public boolean onOptionsItemSelected(MenuItem item) {
     int id = item.getItemId();
